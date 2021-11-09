@@ -8,7 +8,7 @@ class DebitCard
 {
     // ...
 
-    public function getTotalConsumed()
+    public function getTotalConsumed(): float
     {
         return 250;
     }

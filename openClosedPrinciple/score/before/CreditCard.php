@@ -8,7 +8,7 @@ class CreditCard
 {
     // ...
     
-    public function getTotalConsumed()
+    public function getTotalConsumed(): float
     {
         return 100;
     }
