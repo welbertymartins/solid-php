@@ -24,9 +24,5 @@ class Course
     {
         $this->videos[] = $video;
     }
-
-    public function getName(): string
-    {
-        return $this->name;
-    }
+    
 }
