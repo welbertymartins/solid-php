@@ -6,15 +6,15 @@ namespace Model\Geometry;
 
 class Square implements FlatFigure
 {   
-    protected float $side;
+    protected float $sideSize;
 
-    public function setSide(float $side)
+    public function setSide(float $sideSize)
     {
-        $this->side = $side;
+        $this->sideSize = $sideSize;
     }
 
     public function calculateArea(): float
     {
-        return $this->side * $this->side;
+        return $this->sideSize * $this->sideSize;
     }
 }

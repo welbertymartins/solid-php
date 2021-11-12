@@ -18,4 +18,6 @@ class Feedback implements FeedbackInterface
         $this->rating = $rating;
         $this->testimony = $testimony;
     }
+
+    // ...
 }
