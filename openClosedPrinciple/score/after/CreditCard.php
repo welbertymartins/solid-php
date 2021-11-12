@@ -10,7 +10,7 @@ class CreditCard implements Scoreable
     
     public function getTotalConsumed(): float
     {
-        return 100;
+        return 100.66;
     }
 
     public function calculateScore(): float

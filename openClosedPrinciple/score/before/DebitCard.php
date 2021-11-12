@@ -10,6 +10,6 @@ class DebitCard
 
     public function getTotalConsumed(): float
     {
-        return 250;
+        return 250.60;
     }
 }

@@ -10,6 +10,6 @@ class CreditCard
     
     public function getTotalConsumed(): float
     {
-        return 100;
+        return 100.65;
     }
 }

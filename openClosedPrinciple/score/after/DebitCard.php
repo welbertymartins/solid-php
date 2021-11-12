@@ -10,7 +10,7 @@ class DebitCard implements Scoreable
 
     public function getTotalConsumed(): float
     {
-        return 250;
+        return 250.65;
     }
 
     public function calculateScore(): float
