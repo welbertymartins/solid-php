@@ -24,5 +24,4 @@ class Course
     {
         $this->videos[] = $video;
     }
-
 }
