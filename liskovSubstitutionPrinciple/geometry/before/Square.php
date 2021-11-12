@@ -18,3 +18,4 @@ class Square extends Rectangle
         $this->width = $height;
     }
 }
+
