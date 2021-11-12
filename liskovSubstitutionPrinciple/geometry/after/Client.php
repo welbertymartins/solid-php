@@ -9,6 +9,6 @@ $rectangle->setWidth(4);
 $rectangle->setHeight(6);
 echo $rectangle->calculateArea(); // 24
 
-$rectangle = new Square();
-$rectangle->setSide(4.89);
-echo $rectangle->calculateArea(); // ~24
+$square = new Square();
+$square->setSide(4.89);
+echo $square->calculateArea(); // ~24
