@@ -9,8 +9,13 @@ class Pay
     public function pay($value, $type)
     {
         if( $type instanceof CreditCard ){
+
+            $cardNumber = $type->getCardNumber();
             // ...
+
         } else if( $type instanceof DebitCard ) {
+           
+            $cardNumber = $type->getCardNumber();
             // ...
         }
     }
