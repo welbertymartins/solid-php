@@ -9,7 +9,7 @@ $rectangle->setWidth(10);
 $rectangle->setHeight(6);
 echo $rectangle->calculateArea(); // 60
 
-$rectangle = new Square();
-$rectangle->setWidth(10);
-$rectangle->setHeight(6);
-echo $rectangle->calculateArea(); // 36
+$square = new Square();
+$square->setWidth(10);
+$square->setHeight(6);
+echo $square->calculateArea(); // 36
