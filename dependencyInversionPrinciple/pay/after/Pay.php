@@ -12,8 +12,8 @@ class Pay
         $this->service = $service;
     }
 
-    public function pay()
+    public function pay(float $value)
     {
-        $this->service->pay();
+        $this->service->pay($value);
     }
 }

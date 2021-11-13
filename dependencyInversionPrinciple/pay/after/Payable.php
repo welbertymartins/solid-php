@@ -6,5 +6,5 @@ namespace Model\Pay;
 
 interface Payable
 {
-    public function pay();
+    public function pay(float $value);
 }

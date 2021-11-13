@@ -6,7 +6,7 @@ namespace Model\Pay;
 
 class CreditCard implements Payable
 {
-    public function pay()
+    public function pay(float $value)
     {
         // ...
     }
