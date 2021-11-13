@@ -6,14 +6,14 @@ namespace Model\Pay;
 
 class Pay 
 {       
-    private Payable $client;
+    private Payable $service;
 
-    public function __construct(Payable $client) {
-        $this->client = $client;
+    public function __construct(Payable $service) {
+        $this->service = $service;
     }
 
     public function pay()
     {
-        $this->client->pay();
+        $this->service->pay();
     }
 }
