@@ -6,17 +6,19 @@ namespace Model\Pay;
 
 class Pay 
 {
-    public function pay($value, $type)
+    public function pay($value, $type): PayResponse
     {
         if( $type instanceof CreditCard ){
 
             $cardNumber = $type->getCardNumber();
             // ...
+            return new PayResponse();
 
         } else if( $type instanceof DebitCard ) {
            
             $cardNumber = $type->getCardNumber();
             // ...
+            return new PayResponse();
         }
     }
 }

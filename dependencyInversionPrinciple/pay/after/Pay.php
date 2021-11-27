@@ -8,12 +8,13 @@ class Pay
 {       
     private Payable $service;
 
-    public function __construct(Payable $service) {
+    public function __construct(Payable $service)
+    {
         $this->service = $service;
     }
 
-    public function pay(float $value)
+    public function pay(float $value): PayResponse
     {
-        $this->service->pay($value);
+        return $this->service->pay($value);
     }
 }
