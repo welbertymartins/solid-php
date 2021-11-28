@@ -14,7 +14,7 @@ class Video
     {   
         $this->name = $name;
         $this->visualized = false;
-        $this->duration = \DateInterval::createFromDateString("0");
+        $this->duration = \DateInterval::createFromDateString("2 minutes");
     }
 
     public function watch(): void
