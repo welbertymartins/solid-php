@@ -12,4 +12,4 @@ This is a repository with simple solid .php examples.
 
 ## object oriented programming (OOP)
 ### cohesion
-<blockquote>A class should have only one reason to change.</blockquote> Robert C. Martin. (SRP)
+<blockquote>A class should have only one reason to change - <i>Robert C. Martin, SRP</i></blockquote>
