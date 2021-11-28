@@ -13,14 +13,21 @@ class Course
     public function __construct(string $name)
     {
         $this->name = $name;
+        $this->videos = array();
+        $this->feedbacks = array();
     }
 
-    public function addFeedback(FeedbackInterface $feedback)
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    public function addFeedback(Feedback $feedback): void
     {   
         $this->feedbacks[] = $feedback;
     }
 
-    public function addVideo(VideoInterface $video) 
+    public function addVideo(Video $video): void
     {
         $this->videos[] = $video;
     }

@@ -13,9 +13,11 @@ class Course
     public function __construct(string $name)
     {
         $this->name = $name;
+        $this->videos = array();
+        $this->feedbacks = array();
     }
 
-    public function addFeedback(int $rating, ?string $testimony = null)
+    public function addFeedback(int $rating, ?string $testimony = null): void
     {   
         if($rating < 9 && empty($testimony)) {
             throw new \DomainException("Mandatory testimony if rating is less than 9");
@@ -24,7 +26,7 @@ class Course
         $this->feedbacks[] = [$rating, $testimony];
     }
 
-    public function addVideo(VideoInterface $video) 
+    public function addVideo(Video $video): void
     {
         $this->videos[] = $video;
     }
